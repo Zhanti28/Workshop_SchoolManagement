@@ -26,7 +26,7 @@ public class Student {
     }
 
     public void setid(int id) {
-        if(id != 0 || id < 0) {
+        if(id != 0) {
             this.id = id;
         }
     }

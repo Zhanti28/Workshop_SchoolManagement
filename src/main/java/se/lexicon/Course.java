@@ -10,9 +10,9 @@ public class Course {
     private String courseName;
     private LocalDate date;
     private int weekDuration;
-    private Student student;
-
     List<Student> students = new ArrayList<>();
+
+
 
 
 
@@ -65,18 +65,18 @@ public class Course {
     }
 
     public void setWeekDuration(int weekDuration) {
-        if(weekDuration != 0|| weekDuration <= -1){
+        if(weekDuration != 0){
             this.weekDuration = weekDuration;
         }
     }
 
 
-    //Student
-    public Student getStudent() {
-        return student;
+    public void addStudent(Student student){
+        students.add(student);
     }
 
-    public void setStudent(Student student) {
-        this.student = student;
+    public void removeStudent(Student student){
+        students.remove(student);
     }
+
 }
