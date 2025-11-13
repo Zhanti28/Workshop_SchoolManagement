@@ -14,8 +14,7 @@ public class Course {
 
 
 
-
-
+    //Constructor
     public Course(int id, String courseName, LocalDate date, int weekDuration, Student student) {
         setId(id);
         setCourseName(courseName);
@@ -71,6 +70,7 @@ public class Course {
     }
 
 
+    //Add and remove from the list
     public void addStudent(Student student){
         students.add(student);
     }
@@ -79,4 +79,9 @@ public class Course {
         students.remove(student);
     }
 
+
+    @Override
+    public String toString() {
+        return "Course Id: " + id + ", Name: " + courseName + ", Date: " + date + ", Duration in week: " + weekDuration;
+    }
 }

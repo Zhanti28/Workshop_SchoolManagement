@@ -21,11 +21,11 @@ public class Student {
 
     //Getter and Setter
     //id
-    public int getid() {
+    public int getId() {
         return id;
     }
 
-    public void setid(int id) {
+    public void setId(int id) {
         if(id != 0) {
             this.id = id;
         }
@@ -65,5 +65,10 @@ public class Student {
         if(address != null) {
             this.address = address;
         }
+    }
+
+    @Override
+    public String toString() {
+        return " Student Id: " + id + ", Name: " + name + ", Email: " + email + ", Address: " + address;
     }
 }

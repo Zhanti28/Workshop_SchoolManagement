@@ -1,6 +1,7 @@
 package se.lexicon;
 
 import java.util.List;
+import java.time.LocalDate;
 
 public interface CourseDao {
 
