@@ -9,6 +9,6 @@ public interface StudentDao {
     public List<Student> findByName(String name);
     public Student findById(int id);
     public List<Student> findAll();
-    public boolean delete(int id);
+    public boolean delete(Student student);
 
 }
