@@ -10,7 +10,7 @@ public class Student {
 
     //Constructor
     public Student(int id, String name, String email, String address) {
-        setid(id);
+        setId(id);
         setName(name);
         setEmail(email);
         setAddress(address);

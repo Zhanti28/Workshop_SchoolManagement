@@ -15,7 +15,7 @@ public class Course {
 
 
     //Constructor
-    public Course(int id, String courseName, LocalDate date, int weekDuration, Student student) {
+    public Course(int id, String courseName, LocalDate date, int weekDuration) {
         setId(id);
         setCourseName(courseName);
         setDate(date);

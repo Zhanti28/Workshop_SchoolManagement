@@ -9,7 +9,7 @@ public class StudentDaoImpl implements StudentDao {
 
 
     @Override
-    public Student save(Student student) {
+    public Student saveStudent(Student student) {
         students.add(student);
         return student;
     }

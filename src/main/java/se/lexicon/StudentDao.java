@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface StudentDao {
 
-    public Student save(Student student);
+    public Student saveStudent(Student student);
     public Student findByEmail(String email);
     public List<Student> findByName(String name);
     public Student findById(int id);
